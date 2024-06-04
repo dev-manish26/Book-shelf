@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCard from './BookCard';
+import BookCard2 from './BookCard2';
 
 function Bookshelf() {
   const bookKeys = Object.keys(localStorage);
@@ -12,7 +12,7 @@ function Bookshelf() {
           const bookData = localStorage.getItem(key);
           if (bookData) {
             const book = JSON.parse(bookData);
-            return <BookCard key={key} book={book} />;
+            return <BookCard2 key={key} book={book} />;
           } else {
             return null;
           }
