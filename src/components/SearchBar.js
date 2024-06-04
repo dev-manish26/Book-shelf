@@ -10,8 +10,13 @@ function SearchBar({ onSearch }) {
     onSearch(value);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSearch(query);
+  }
+
   return (
-    <form className="search-form">
+    <form className="search-form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Search for books..."
