@@ -11,7 +11,7 @@ function SearchBar({ onSearch }) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // this won't reload the page after hitting enter
     onSearch(query);
   }
 

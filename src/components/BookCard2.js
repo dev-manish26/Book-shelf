@@ -5,7 +5,7 @@ function BookCard({ book }) {
   const handleAddToLocalStorage = () => {
     // Store the book information in local storage
     localStorage.setItem(book.key, JSON.stringify(book));
-    console.log(localStorage)
+    // console.log(localStorage)
   };
 
   return (

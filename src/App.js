@@ -30,7 +30,7 @@ function App() {
   // Cleanup local storage on component unmount or re-render
   useEffect(() => {
     return () => {
-      localStorage.clear(); // Clear local storage
+      localStorage.clear(); 
     };
   }, []);
 

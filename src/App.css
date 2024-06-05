@@ -13,6 +13,12 @@ body {
   /* padding: 20px; */
 }
 
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+}
+
 /* Header Component */
 .App-header {
   background-color: #282c34;
@@ -56,6 +62,7 @@ body {
 
 @media (max-width: 600px) {
   .bookshelf-button {
+    position: relative;
     padding: 5px 10px;
     font-size: 0.8rem;
     top: 10px;
@@ -77,20 +84,6 @@ body {
   border-radius: 4px;
 }
 
-.search-button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  font-size: 1rem;
-  background-color: #61dafb;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #21a1f1;
-}
 
 @media (max-width: 600px) {
   .search-form {
@@ -100,15 +93,11 @@ body {
   }
 
   .search-input {
-    width: 100%;
+    width: 90%;
     max-width: none;
     margin-bottom: 10px;
   }
 
-  .search-button {
-    width: 100%;
-    max-width: none;
-  }
 }
 
 /* BookList Component */
